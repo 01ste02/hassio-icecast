@@ -1,8 +1,8 @@
 FROM alpine:latest
 RUN apk add --no-cache icecast ices
 
-COPY ices.xml /
-COPY icecast.xml /
+COPY ices.xml /ices.xml
+COPY icecast.xml /icecast.xml
 
 RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
  && cd /root \
@@ -19,7 +19,7 @@ RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
  && sed "s/thisisnopassword/$pass/g" /ices.xml \
  && sed "s/thisisnopassword/$pass/g" /icecast.xml
 
-COPY run.sh /
+COPY run.sh /run.sh
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
