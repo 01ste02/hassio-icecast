@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Icecast-related addons for hassio
+url: 'https://github.com/01ste02/hassio-icecast'
+maintainer: Oskar Stenberg <oskar@stenit.eu>
