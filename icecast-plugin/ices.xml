@@ -22,7 +22,7 @@
 		<instance>
             		<hostname>localhost</hostname>
             		<port>6000</port>
-            		<password>eishaed5Eeng9eezubaeshaibiequaez</password>
+            		<password>thisisnopassword</password>
             		<mount>/spotify.ogg</mount>
             		<yp>0</yp>   <!-- allow stream to be advertised on YP, default 0 -->
             		<encode>  
