@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<ices>
+	<background>0</background>
+	<logsize>2048</logsize>
+	<loglevel>3</loglevel>
+	<consolelog>1</consolelog>
+
+	<stream>
+		<metadata>
+			<name>HomeAssistant Stream</name>
+			<genre>All</genre>
+			<description>Multiroom-spotify at home</description>
+			<url>http://mysite.org</url>
+		</metadata>
+
+		<input>
+        		<module>stdinpcm</module>
+        		<param name="rate">44100</param>
+        		<param name="channels">2</param>
+        	</input>
+
+		<instance>
+            		<hostname>localhost</hostname>
+            		<port>6000</port>
+            		<password>eishaed5Eeng9eezubaeshaibiequaez</password>
+            		<mount>/spotify.ogg</mount>
+            		<yp>0</yp>   <!-- allow stream to be advertised on YP, default 0 -->
+            		<encode>  
+                		<managed>0</managed>
+		<!--            <nominal-bitrate>64000</nominal-bitrate>
+		-->
+                		<quality>5</quality>
+                		<samplerate>44100</samplerate>
+                		<channels>2</channels>
+            		</encode>
+
+         
+        	</instance>
+	</stream>
+</ices>
