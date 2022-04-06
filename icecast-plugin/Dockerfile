@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk add --no-cache icecast2 ices2
+RUN apk add --no-cache icecast ices
 
 COPY ices.xml /
 COPY icecast.xml /
