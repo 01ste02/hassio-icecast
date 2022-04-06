@@ -1,8 +1,8 @@
 FROM alpine:latest
 RUN apk add --no-cache icecast2 ices2
 
-COPY ices.xml
-COPY icecast.xml
+COPY ices.xml /
+COPY icecast.xml /
 
 RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
  && cd /root \
