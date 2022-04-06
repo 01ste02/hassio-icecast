@@ -16,8 +16,8 @@ RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
  && apk add llvm-libunwind \
  && rm -rf /etc/ssl /var/cache/apk/* /lib/apk/db/* /root/v0.1.3.zip /root/librespot-0.3.1 /root/.cargo \
  && pass=$(pwgen -ns 64 1) \
- && sed "s/thisisnopassword/$pass" /ices.xml \
- && sed "s/thisisnopassword/$pass" /icecast.xml
+ && sed "s/thisisnopassword/$pass/g" /ices.xml \
+ && sed "s/thisisnopassword/$pass/g" /icecast.xml
 
 COPY run.sh /
 RUN chmod a+x /run.sh
