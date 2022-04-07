@@ -196,7 +196,7 @@
     </mount>
     -->
 
-    <fileserve>0</fileserve>
+    <fileserve>1</fileserve>
 
     <paths>
         <!-- basedir is only used if chroot is enabled -->
@@ -231,7 +231,7 @@
         <accesslog>-</accesslog>
         <errorlog>-</errorlog>
         <!-- <playlistlog>playlist.log</playlistlog> -->
-        <loglevel>3</loglevel> <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
+        <loglevel>2</loglevel> <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
         <logsize>10000</logsize> <!-- Max size of a logfile -->
         <!-- If logarchive is enabled (1), then when logsize is reached
              the logfile will be moved to [error|access|playlist].log.DATESTAMP,
