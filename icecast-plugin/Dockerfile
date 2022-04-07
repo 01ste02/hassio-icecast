@@ -20,7 +20,7 @@ RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
  && sed "s/thisisnopassword/$pass/g" /icecast.xml
 
 COPY run.sh /run.sh
-RUN chmod a+x /run.sh
+RUN chmod +x /run.sh
 
 CMD [ "/run.sh" ]
 

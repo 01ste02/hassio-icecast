@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "Starting softwares...."
 librespot -q -n TestHomeAssistant --backend pipe | ices /ices.xml &
