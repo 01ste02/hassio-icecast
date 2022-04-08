@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk add --no-cache icecast ices
+RUN apk add --no-cache icecast ices python3
 
 COPY ices.xml /ices.xml
 COPY icecast.xml /icecast.xml
@@ -19,7 +19,6 @@ RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
  && sed "s/thisisnopassword/$pass/g" /ices.xml \
  && sed "s/thisisnopassword/$pass/g" /icecast.xml
 
-RUN apk add --update --no-cache curl python3
 COPY librespot_handler.py /librespot_handler.py
 
 COPY run.sh /run.sh
