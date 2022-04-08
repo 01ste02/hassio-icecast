@@ -24,7 +24,7 @@
 			<port>6000</port>
 			<username>source</username>
             		<password>thisisnopassword</password>
-			<mount>/spotify.ogg</mount>
+			<mount>/spotify2.ogg</mount>
 			<reconnectattempts>10</reconnectattempts>
 			<reconnectdelay>15</reconnectdelay>
             		<yp>0</yp>   <!-- allow stream to be advertised on YP, default 0 -->
