@@ -1,6 +1,6 @@
 name: Icecast2, ICES2 and librespot for hassio
 description: Addon for streaming spotify to the whole home
-version: 0.9.3
+version: 0.9.4
 slug: icespot
 startup: application
 boot: auto
