@@ -19,6 +19,9 @@ RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
  && sed "s/thisisnopassword/$pass/g" /ices.xml \
  && sed "s/thisisnopassword/$pass/g" /icecast.xml
 
+RUN apk -U add python3
+COPY librespot_handler.py /librespot_handler.py
+
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 
