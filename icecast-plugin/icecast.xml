@@ -172,7 +172,7 @@
         <on-disconnect>/home/icecast/bin/stream-stop</on-disconnect>
     </mount>
     -->
-    <mount type="normal">
+    <!--<mount type="normal">
         <mount-name>/spotify.ogg</mount-name>
 	<max-listeners>10</max-listeners>
 	<max-listener-duration>86400</max-listener-duration>
@@ -181,7 +181,7 @@
 	<authentication type="url">
 	    <option name="stream_auth" value="http://localhost:6000/source.php"/>
         </authentication>
-    </mount>
+    </mount> -->
     <!--
     <mount type="normal">
         <mount-name>/auth_example.ogg</mount-name>
