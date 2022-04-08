@@ -2,7 +2,7 @@
 <ices>
 	<background>0</background>
 	<logsize>2048</logsize>
-	<loglevel>3</loglevel>
+	<loglevel>4</loglevel>
 	<consolelog>1</consolelog>
 
 	<stream>
@@ -10,7 +10,7 @@
 			<name>HomeAssistant Stream</name>
 			<genre>All</genre>
 			<description>Multiroom-spotify at home</description>
-			<url>http://mysite.org</url>
+			<url>http://192.168.197.22</url>
 		</metadata>
 
 		<input>
@@ -20,10 +20,13 @@
         	</input>
 
 		<instance>
-            		<hostname>localhost</hostname>
-            		<port>6000</port>
+            		<hostname>192.168.197.22</hostname>
+			<port>6000</port>
+			<username>source</username>
             		<password>thisisnopassword</password>
-            		<mount>/spotify.ogg</mount>
+			<mount>/spotify.ogg</mount>
+			<reconnectattempts>10</reconnectattempts>
+			<reconnectdelay>15</reconnectdelay>
             		<yp>0</yp>   <!-- allow stream to be advertised on YP, default 0 -->
             		<encode>  
                 		<managed>0</managed>
