@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
+RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev python3 \
  && cd /root \
  && curl -LO https://github.com/librespot-org/librespot/archive/refs/tags/v0.3.1.zip \
  && unzip v0.3.1.zip \
@@ -10,8 +10,6 @@ RUN apk -U add build-base curl cargo portaudio-dev protobuf-dev pwgen \
  && apk --purge del curl cargo portaudio-dev protobuf-dev \
  && apk add llvm-libunwind \
  && rm -rf /etc/ssl /var/cache/apk/* /lib/apk/db/* /root/v0.1.3.zip /root/librespot-0.3.1 /root/.cargo
-
-RUN apk add --no-cache python3
 
 COPY librespot_handler.py /librespot_handler.py
 
